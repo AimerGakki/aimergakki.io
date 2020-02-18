@@ -33,23 +33,23 @@ var vm = new Vue({
                                     vm.from.push(vm.from1[l++])
                                     if (l === vm.from1.length) {
                                         clearInterval(timer3);
-                                        setTimeout(() => {
+                                        /* setTimeout(() => {
                                             vm.$refs['text-box'].style.opacity="0.1"
                                             setTimeout(()=>{
                                                 vm.$refs['text-box'].style.opacity="0"
                                             },60000)
-                                        }, 60000)
+                                        }, 60000) */
                                     }
-                                }, 50)
+                                }, 500)
                                 clearInterval(timer2);
                             }
 
-                        }, 50)
+                        }, 500)
                         clearInterval(timer);
                     }
 
                 }
-            }, 50)
+            }, 500)
 
         },
     },
